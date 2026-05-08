@@ -1,4 +1,4 @@
-import { LocalBusiness, FAQPage, WithContext } from 'schema-dts';
+import { HomeAndConstructionBusiness, WebSite, FAQPage, WithContext } from 'schema-dts';
 
 export const SITE_CONFIG = {
     name: "L&M Septic",
@@ -19,7 +19,19 @@ export const SITE_CONFIG = {
     },
 };
 
-export const localBusinessSchema: WithContext<LocalBusiness> = {
+export const websiteSchema: WithContext<WebSite> = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": SITE_CONFIG.name,
+    "url": SITE_CONFIG.url,
+    "potentialAction": {
+        "@type": "SearchAction",
+        "target": `${SITE_CONFIG.url}/search?q={search_term_string}`,
+        "query-input": "required name=search_term_string"
+    } as any
+};
+
+export const localBusinessSchema: WithContext<HomeAndConstructionBusiness> = {
     "@context": "https://schema.org",
     "@type": "HomeAndConstructionBusiness",
     "name": SITE_CONFIG.name,

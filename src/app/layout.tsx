@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { SITE_CONFIG } from "@/lib/seo";
+import { SITE_CONFIG, websiteSchema } from "@/lib/seo";
 import { Geist } from "next/font/google";
 import { cn } from "@/lib/utils";
 
@@ -25,6 +25,10 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
       </head>
       <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        />
         <div className="bg-background font-body-md text-on-surface scroll-smooth min-h-screen flex flex-col">
           {children}
         </div>

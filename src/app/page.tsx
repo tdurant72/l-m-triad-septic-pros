@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import { SITE_CONFIG, homepageFaqSchema } from '@/lib/seo';
+import { SITE_CONFIG, homepageFaqSchema, localBusinessSchema } from '@/lib/seo';
 
 import NavBar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -20,6 +20,15 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
+      {/* JSON-LD Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(homepageFaqSchema) }}
+      />
       <NavBar />
       <main className="pt-20 flex-grow overflow-x-hidden">
         <HeroSection />
