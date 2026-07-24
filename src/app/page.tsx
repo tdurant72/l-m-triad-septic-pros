@@ -10,11 +10,12 @@ import ServicesSection from '@/components/sections/ServicesSection';
 import ServiceAreaSection from '@/components/sections/ServiceAreaSection';
 import TestimonialsSection from '@/components/sections/TestimonialsSection';
 import HomepageFAQs from '@/components/sections/HomepageFAQs';
+import BookingSection from '@/components/sections/BookingSection';
 import CTASection from '@/components/sections/CTASection';
 import AboutUsSection from '@/components/sections/AboutUsSection';
 
 export const metadata: Metadata = {
-  title: SITE_CONFIG.name,
+  title: 'L&M Septic Pros | Septic Installation, Repair & Pumping in the Triad, NC',
   description: SITE_CONFIG.description,
 }
 export default function Home() {
@@ -39,6 +40,7 @@ export default function Home() {
         <ServiceAreaSection />
         <TestimonialsSection />
         <HomepageFAQs />
+        <BookingSection />
         <CTASection />
       </main>
       <Footer />

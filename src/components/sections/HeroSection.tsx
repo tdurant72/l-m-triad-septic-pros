@@ -78,8 +78,8 @@ export default function HeroSection() {
               <span className="material-symbols-outlined text-[20px]" style={{ fontVariationSettings: "'FILL' 1" }}>call</span>
               Call Now: (336) 578-6972
             </a>
-            <a href="#services" className="bg-white text-[#0F172A] flex items-center justify-center cursor-pointer border-2 border-[#E2E8F0] px-8 py-4 sm:py-5 rounded-xl font-['Work_Sans'] font-semibold text-sm sm:text-[15px] hover:border-[#CBD5E1] hover:bg-[#F8FAFC] transition-colors active:scale-95 transform text-center">
-              Explore Our Services
+            <a href="#booking" className="bg-white text-[#0F172A] flex items-center justify-center cursor-pointer border-2 border-[#E2E8F0] px-8 py-4 sm:py-5 rounded-xl font-['Work_Sans'] font-semibold text-sm sm:text-[15px] hover:border-[#CBD5E1] hover:bg-[#F8FAFC] transition-colors active:scale-95 transform text-center">
+              Book an Appointment
             </a>
           </motion.div>
 

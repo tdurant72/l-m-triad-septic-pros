@@ -7,8 +7,10 @@ export const SITE_CONFIG = {
     description: "The Triad's trusted choice for worry-free septic systems. From precision installations to proactive maintenance, we ensure your home's most critical infrastructure is invisible, functional, and fully compliant.",
     phone: "(336) 578-6972",
     location: {
-        city: "Greensboro",
+        address: "6920 Cecil Farm Rd",
+        city: "High Point",
         region: "NC",
+        postalCode: "27263",
         country: "US",
     },
     owner: {

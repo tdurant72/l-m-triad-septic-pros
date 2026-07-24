@@ -58,8 +58,8 @@ export default function NavBar() {
               key={link.id}
               onClick={() => handleClick(link.id)}
               className={`font-['Work_Sans'] text-xs font-semibold tracking-wider uppercase transition-all duration-300 border-b-2 pb-1 ${activeSection === link.id
-                  ? 'text-brand-green border-brand-green hover:border-brand-green'
-                  : 'text-[#64748B] border-transparent hover:text-brand-green hover:border-transparent'
+                ? 'text-brand-green border-brand-green hover:border-brand-green'
+                : 'text-[#64748B] border-transparent hover:text-brand-green hover:border-transparent'
                 }`}
               href={`#${link.id}`}
             >
@@ -71,8 +71,8 @@ export default function NavBar() {
           <a href="tel:3365786972" className="hidden sm:flex items-center gap-2 font-['Work_Sans'] text-sm font-bold tracking-wider text-[#0F172A] hover:text-brand-green transition-colors">
             <span className="material-symbols-outlined text-brand-green">call</span> (336) 578-6972
           </a>
-          <a href="tel:3365786972" className="bg-brand-green text-white px-6 py-3 font-['Work_Sans'] font-semibold tracking-wider uppercase text-xs rounded-xl shadow-[0_4px_12px_rgba(14,118,59,0.2)] hover:bg-brand-green-hover hover:shadow-[0_6px_16px_rgba(14,118,59,0.3)] active:scale-95 transform transition-all flex items-center justify-center">
-            Call Now
+          <a href="/#booking" className="bg-brand-green text-white px-6 py-3 font-['Work_Sans'] font-semibold tracking-wider uppercase text-xs rounded-xl shadow-[0_4px_12px_rgba(14,118,59,0.2)] hover:bg-brand-green-hover hover:shadow-[0_6px_16px_rgba(14,118,59,0.3)] active:scale-95 transform transition-all flex items-center justify-center">
+            Book an Appointment
           </a>
         </div>
       </div>
